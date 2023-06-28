@@ -1,0 +1,23 @@
+# Ler os números inteiros para a lista1
+lista1 = []
+for i in range(5):
+    numero = int(input())
+    lista1.append(numero)
+
+# Ler os números inteiros para a lista2
+lista2 = []
+for i in range(5):
+    numero = int(input())
+    lista2.append(numero)
+
+# Criar a lista de tuplas a partir de lista1 e lista2 usando a função zip
+list_tuple = list(zip(lista1, lista2))
+
+# Imprimir a lista de tuplas
+print(list_tuple)
+
+# Calcular as médias das tuplas e criar a lista medias
+medias = [(x + y) / 2 for x, y in list_tuple]
+
+# Imprimir a lista das médias das tuplas
+print(medias)
